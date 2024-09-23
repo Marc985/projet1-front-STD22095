@@ -8,18 +8,25 @@ import { useState } from "react";
 const App = () => {
     const [startDate, setStartDate] = useState("2024-05-03"); // Valeur par défaut
     const [endDate, setEndDate] = useState("2024-07-20"); // Valeur par défaut
+    const [filters, setFilters] = useState({});
 
     const handleDateChange = (start, end) => {
         setStartDate(start);
         setEndDate(end);
     };
 
+    const handleCheckboxChange = (checkboxes) => {
+        setFilters(checkboxes);
+    };
+
+   
+
     return (
         <div className="flex flex-row gap-10 bg-gray-300 h-full p-1">
             <div className="flex flex-col gap-6">
-                <UserInput onDateChange={handleDateChange}/>
-                <ImpossibleFlow begin={startDate} end={endDate}/>
-                <DailyFlow begin={startDate} end={endDate}/>
+                <UserInput onDateChange={handleDateChange} onCheckboxChange={handleCheckboxChange}/>
+                <ImpossibleFlow begin={startDate} end={endDate} filters={filters}/>
+                <DailyFlow begin={startDate} end={endDate} filters={filters}/>
                 
             </div>
             <div className="border border-gray-300">

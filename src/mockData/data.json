@@ -3,17 +3,23 @@
         {
             "date":"2024-05-03",
             "desc":"blabla1",
-            "type":"fluxImpossilbe"
+            "type":"fluxImpossilbe",
+            "subType":"agregat"
         },
         {
             "date":"2024-06-04",
             "desc":"blabla2",
-            "type":"fluxImpossilbe"
+            "type":"fluxImpossilbe",
+            "subType":"obligation"
+
         },
         {
             "date":"2024-07-03",
             "desc":"blabla3",
-            "type":"fluxJournalier"
+            "type":"fluxJournalier",
+            "subType":"agregat"
+
+
         }
     ]
 }
