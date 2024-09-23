@@ -1,6 +1,8 @@
 import { FlowList } from "../utils/FlowList";
-export const ImpossibleFlow=()=>{
+import data from "../mockData/data.json"
+export const ImpossibleFlow=({begin,end})=>{
+   
     return (
-        <FlowList type={"flux impossilbe"}/>
+        <FlowList type={"flux impossible"} data={data.data} beginDate={begin} endDate={end} />
     )
 }

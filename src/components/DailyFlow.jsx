@@ -1,6 +1,7 @@
 import { FlowList } from "../utils/FlowList";
-export const DailyFlow=()=>{
+import data from "../mockData/data.json"
+export const DailyFlow=({begin,end})=>{
     return (
-        <FlowList type={"flux Journalier"}/>
+        <FlowList type={"flux journalier"} data={data.data} beginDate={begin} endDate={end}/>
     )
 }
