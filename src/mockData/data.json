@@ -1,25 +1,118 @@
 {
-    "data":[
+    "data": [
         {
-            "date":"2024-05-03",
-            "desc":"blabla1",
-            "type":"fluxImpossilbe",
-            "subType":"agregat"
+            "date": "2024-05-03",
+            "desc": "flux impossible 1",
+            "type": "fluxImpossilbe",
+            "subType": "agregat"
         },
         {
-            "date":"2024-06-04",
-            "desc":"blabla2",
-            "type":"fluxImpossilbe",
-            "subType":"obligation"
-
+            "date": "2024-06-04",
+            "desc": "flux impossible 2",
+            "type": "fluxImpossilbe",
+            "subType": "obligation"
         },
         {
-            "date":"2024-07-03",
-            "desc":"blabla3",
-            "type":"fluxJournalier",
-            "subType":"agregat"
-
-
+            "date": "2024-07-03",
+            "desc": "flux journalier 1",
+            "type": "fluxJournalier",
+            "subType": "agregat"
+        },
+        {
+            "date": "2024-05-10",
+            "desc": "flux impossible 3",
+            "type": "fluxImpossilbe",
+            "subType": "tresorie"
+        },
+        {
+            "date": "2024-06-15",
+            "desc": "flux impossible 4",
+            "type": "fluxImpossilbe",
+            "subType": "agregat"
+        },
+        {
+            "date": "2024-07-20",
+            "desc": "flux journalier 2",
+            "type": "fluxJournalier",
+            "subType": "obligation"
+        },
+        {
+            "date": "2024-05-25",
+            "desc": "flux impossible 5",
+            "type": "fluxImpossilbe",
+            "subType": "agregat"
+        },
+        {
+            "date": "2024-06-30",
+            "desc": "flux journalier 3",
+            "type": "fluxJournalier",
+            "subType": "tresorie"
+        },
+        {
+            "date": "2024-07-25",
+            "desc": "flux impossible 6",
+            "type": "fluxImpossilbe",
+            "subType": "obligation"
+        },
+        {
+            "date": "2024-08-01",
+            "desc": "flux journalier 4",
+            "type": "fluxJournalier",
+            "subType": "agregat"
+        },
+        {
+            "date": "2024-08-10",
+            "desc": "flux impossible 7",
+            "type": "fluxImpossilbe",
+            "subType": "tresorie"
+        },
+        {
+            "date": "2024-08-20",
+            "desc": "flux impossible 8",
+            "type": "fluxImpossilbe",
+            "subType": "obligation"
+        },
+        {
+            "date": "2024-09-01",
+            "desc": "flux journalier 5",
+            "type": "fluxJournalier",
+            "subType": "agregat"
+        },
+        {
+            "date": "2024-09-05",
+            "desc": "flux impossible 9",
+            "type": "fluxImpossilbe",
+            "subType": "tresorie"
+        },
+        {
+            "date": "2025-01-01",
+            "desc": "flux journalier 6",
+            "type": "fluxJournalier",
+            "subType": "agregat"
+        },
+        {
+            "date": "2025-02-15",
+            "desc": "flux impossible 10",
+            "type": "fluxImpossilbe",
+            "subType": "obligation"
+        },
+        {
+            "date": "2025-03-10",
+            "desc": "flux journalier 7",
+            "type": "fluxJournalier",
+            "subType": "tresorie"
+        },
+        {
+            "date": "2025-04-20",
+            "desc": "flux impossible 11",
+            "type": "fluxImpossilbe",
+            "subType": "agregat"
+        },
+        {
+            "date": "2025-05-30",
+            "desc": "flux journalier 8",
+            "type": "fluxJournalier",
+            "subType": "obligation"
         }
     ]
 }
