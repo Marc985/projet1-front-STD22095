@@ -8,23 +8,53 @@ import { useState } from "react";
 const App = () => {
     const [startDate, setStartDate] = useState("2024-05-03"); // Valeur par défaut
     const [endDate, setEndDate] = useState("2024-07-20"); // Valeur par défaut
-    const [filters, setFilters] = useState({});
 
+    const [filters, setFilters] = useState({
+        agregat: false,
+        tresorie: false,
+        obligation: false,
+    });
     const handleDateChange = (start, end) => {
         setStartDate(start);
         setEndDate(end);
     };
-
-    const handleCheckboxChange = (checkboxes) => {
-        setFilters(checkboxes);
+console.log(filters);
+  
+    const handleCheckboxChange = (updatedFilters) => {
+        setFilters(updatedFilters);
     };
-
    
 
     return (
         <div className="flex flex-row gap-10 bg-gray-300 h-full p-1">
             <div className="flex flex-col gap-6">
-                <UserInput onDateChange={handleDateChange} onCheckboxChange={handleCheckboxChange}/>
+            <div className="flex flex-row gap-2">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            checked={filters.agregat}
+                            onChange={(e) => handleCheckboxChange({ ...filters, agregat: e.target.checked })}
+                        />
+                        agregat
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            checked={filters.tresorie}
+                            onChange={(e) => handleCheckboxChange({ ...filters, tresorie: e.target.checked })}
+                        />
+                        tresorie
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            checked={filters.obligation}
+                            onChange={(e) => handleCheckboxChange({ ...filters, obligation: e.target.checked })}
+                        />
+                        obligation
+                    </label>
+                </div>
+                <UserInput onDateChange={handleDateChange}/>
                 <ImpossibleFlow begin={startDate} end={endDate} filters={filters}/>
                 <DailyFlow begin={startDate} end={endDate} filters={filters}/>
                 
