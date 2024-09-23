@@ -1,6 +1,6 @@
 export const UserInput=()=>{
     return(
-            <div>
+            <div className="bg-white p-1 rounded-sm flex flex-col gap-1 items-center justify-center">
                     <div className="flex flex-row gap-2">
                         <label >
                             <input type="checkbox" />
